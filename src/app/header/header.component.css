@@ -1,0 +1,47 @@
+/* Add this inside your component's CSS file */
+.mobile-nav {
+  display: none;
+
+}
+
+.mobile-nav.active {
+  display: block;
+  margin-top: 329px;
+  width: 193%;
+
+}
+@media (min-width: 768px) {
+  .mobile-nav {
+    display: none;
+  }
+}
+
+/* Add media query for responsiveness */
+@media (max-width: 768px) {
+  .navbar ul {
+    display: none; 
+    width:30%;
+  }
+  .col-md-6 {
+    width: 103%;
+    text-align: start;
+  }
+  .mobile-nav{
+    margin-top: 40px;
+    width: 100%;
+    margin-left: -1px;
+  }
+
+  .navbar .mobile-nav {
+    display: block; 
+  }
+ li {
+      color: white;
+      text-decoration: none;
+      background-color: black;
+      font-size: 18px;
+      padding: 9px;
+      list-style-type: none;
+  }
+
+}
